@@ -289,7 +289,7 @@ def create_index_files(path, overwrite=False):
             # Create an index using wgrib2's simple inventory option
             # if it doesn't already exist or if overwrite is True.
             index_data = wgrib2_idx_to_str(Path(f))
-            with open(f_idx, 'w+') as out_idx:
+            with open(f_idx, "w+") as out_idx:
                 out_idx.write(index_data)
 
 
